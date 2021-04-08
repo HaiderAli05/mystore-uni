@@ -23,6 +23,7 @@ router.post('/', async(req, res)=>{
 //Check all Users
 router.get('/', async (req, res)=>{
     try{
+        console.log("We are on Users");
         const users = await User.find();
         res.json(users);
     }catch(err){
