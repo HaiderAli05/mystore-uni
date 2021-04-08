@@ -1,12 +1,10 @@
 {
-  "name": "demosite-uni",
+  "name": "mystore-uni",
   "version": "1.0.0",
   "description": "",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node app.js",
-    "dev": "nodemon app.js"
+    "start": "node app.js"
   },
   "author": "",
   "license": "ISC",
