@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 
 require('dotenv/config');
 
-mongoose.connect("mongodb+srv://haider:haider*786MDAL@cluster0.nogr8.mongodb.net/demosite?retryWrites=true&w=majority", {
+mongoose.connect(process.env.DB, {
     useCreateIndex:true,
     useNewUrlParser:true,
     useUnifiedTopology:true
