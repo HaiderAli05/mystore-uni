@@ -1,6 +1,6 @@
 const express = require("express");
 const app = express();
-
+const path = require('path');
 const bodyParser = require('body-parser');
 const cors = require('cors');
 
@@ -12,6 +12,8 @@ const port = process.env.PORT || 3000 ;
 //MiddleWares
 app.use(cors());
 app.use(bodyParser.json());
+
+app.use(express.static('public'));
 
 //Import Routes
 const usersRoutes = require("./routes/users");
