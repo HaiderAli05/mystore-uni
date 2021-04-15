@@ -1,5 +1,6 @@
 const express = require("express");
 const router = express.Router();
+const path = require('path');
 const User = require("../models/user");
 
 
@@ -14,23 +15,33 @@ router.post('/', async(req, res)=>{
     });
     try{
         const savedUser = await user.save();
-        res.json(savedUser);
+        // res.json(savedUser);
+        const login = path.join(__dirname, '../public/login.html');
+        res.sendFile(login);
+
     }catch(err){
         res.json({message: err});
     }
 });
 
-//Check all Users
+//SignUp Users
 router.get('/', async (req, res)=>{
     try{
-        console.log("We are on Users");
+        const signUp = await path.join(__dirname, '../public/signUp.html');
+        res.sendFile(signUp);
+    }catch(err){
+        res.json({message: err});
+    }
+});
+//Check all Users
+router.get('/allusers', async (req, res)=>{
+    try{
         const users = await User.find();
         res.json(users);
     }catch(err){
         res.json({message: err});
     }
 });
-
 //Check a specific User by its ID
 router.get('/:userId', async (req, res) => {
     try{

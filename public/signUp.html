@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>My Store</title>
+	<title>Sign Up</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
 </head>
@@ -9,12 +9,12 @@
 	<header class="header">
 		<div class="wrapper">
 			<div class="header-logo">
-				<img src="img/logo.jpg">
+				<a href="/"><img src="img/logo.jpg"></a>
 			</div>
 		<div class="header-menu">
 			<ul>
-				<li><a href="Login.html" name="login">Login</a></li>
-				<li><a href="Sign Up.html">Sign Up</a></li>
+				<li><a href="login.html" name="login">Login</a></li>
+				<li><a href="users">Sign Up</a></li>
 			</ul>
 		</div>
 
@@ -34,28 +34,24 @@
 
 	<section>
         <div class="wrapper">
-            <ul class="products">
-                <li class="prod">
-                    <img src="img/shirt.jpg" alt="">
-                    <h3 class="prod-title">Title</h3>
-                    <p class="prod-desc">This is the description of our Product.</p>
-                </li>
-                <li class="prod">
-                    <img src="img/shirt.jpg" alt="">
-                    <h3 class="prod-title">Title</h3>
-                    <p class="prod-desc">This is the description of our Product.</p>
-                </li>
-                <li class="prod">
-                    <img src="img/shirt.jpg" alt="">
-                    <h3 class="prod-title">Title</h3>
-                    <p class="prod-desc">This is the description of our Product.</p>
-                </li>
-                <li class="prod">
-                    <img src="img/shirt.jpg" alt="">
-                    <h3 class="prod-title">Title</h3>
-                    <p class="prod-desc">This is the description of our Product.</p>
-                </li>
-            </ul>
+           <div class="login">
+           		<div class="login-inner">
+           			<h2>Create Account</h2>
+           			<form method="POST">
+           				<label>Name:</label><br>
+           				<input type="text" name="name"><br>
+           				<label>Email:</label><br>
+           				<input type="text" name="email"><br>
+           				<label>Password:</label><br>
+           				<input type="text" name="password"><br>
+           				<label>Phone:</label><br>
+           				<input type="number" name="phone"><br>
+						<label>Country:</label><br>
+           				<input type="text" name="country"><br>
+           				<input type="submit" name="" value="Sign Up">
+           			</form>
+           		</div>
+           </div>
         </div>
     </section>
 
@@ -69,7 +65,6 @@
 			</div>
 			<div class="footer-2">
 				<h3>Discover</h3>
-				
 				<p>
 					<a href="">Home</a><br>
 					<a href="">About</a><br>

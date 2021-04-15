@@ -69,7 +69,9 @@ nav ul li a:hover{
 	background-color: white;
 	color: #3971c3;
 }
-
+.homepage{
+	padding: 75px 30px;
+}
 .products{
  	display: grid;
     grid-template-columns: repeat(4,1fr);
@@ -77,7 +79,6 @@ nav ul li a:hover{
     grid-gap: 15px;
 }
 .products .prod{
-    border: 1px solid red;
     list-style: none;
 }
 .products .prod img{
